@@ -1,14 +1,10 @@
-import java.io.*;
-
 class Program {
     public static void main(String[] args) {
-        int[] arry = new int[] { 1, 2, 3, 4, 1, -1 };
-        // Sort sort = new Sort();
-        Sort.BubbleSort(arry);
+        int[] arry = new int[] { 34, 1, 221, 50, 44, 58, 12, 1, 1 };
+        // arry.BubbleSort();
+        FastSort.QuickSort(arry, 0, arry.length - 1);
         for (int i = 0; i < arry.length; i++) {
-
             System.out.println("\t" + arry[i]);
         }
-
     }
 }
