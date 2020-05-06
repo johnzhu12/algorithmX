@@ -30,3 +30,5 @@ function mergeSort(items) {
         right = items.slice(middle);
     return merge(mergeSort(left), mergeSort(right));
 }
+
+exports.mergeSort = mergeSort;
